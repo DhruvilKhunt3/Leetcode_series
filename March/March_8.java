@@ -1,4 +1,4 @@
-package Leetcode_series.March;
+
 import java.util.*;
 class solutionM8 {
     char colour[];

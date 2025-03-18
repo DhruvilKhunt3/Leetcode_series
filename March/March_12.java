@@ -1,4 +1,4 @@
-package Leetcode_series.March; 
+ 
 import java.util.Scanner;
 class Solution12{
     int positive;

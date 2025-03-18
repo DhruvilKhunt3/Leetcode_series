@@ -1,4 +1,3 @@
-package Leetcode_series.March;
 import java.util.Scanner;
 class Solution2206 {
     public boolean divideArray(int[] nums) {
