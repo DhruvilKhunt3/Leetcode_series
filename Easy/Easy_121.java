@@ -1,23 +1,13 @@
 package Leetcode_series.Easy;
 class Solution121 {
     public int maxProfit(int[] prices) {
-        int min = 0 ;
-        int max = 0;
-        if(prices.length==1){
-            return 0;
+        int min = prices[0]; 
+        int maxProfit = 0;      
+        for (int i = 1; i < prices.length; i++) {  
+            min = Math.min(min , prices[i]);
+            maxProfit = Math.max(maxProfit , prices[i] - min);
         }
-         for(int i=0;i<prices.length-1;i++){
-            if(prices[i]<prices[i+1]){
-                min = prices[i];
-                for(int j=i;j<prices.length;j++){
-                    if(prices[j]>max){
-                        max = prices[j];
-                    }
-                }
-                break;
-            }
-         }
-        return max - min ;
+        return maxProfit;
     }
 }
 class Easy121 {
